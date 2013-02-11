@@ -1,23 +1,27 @@
-package com.imperial.steward;
+package com.addkitchenmanager;
 
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.sql.*;
+import java.sql.Connection;
+import java.sql.Statement;
+
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import com.imperial.db.*;
+
+import com.imperial.db.Dbconnection;
+
 /**
- * Servlet implementation class Addsteward
+ * Servlet implementation class addkitchenmanager
  */
-public class Addsteward extends HttpServlet {
+public class addkitchenmanager extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public Addsteward() {
+    public addkitchenmanager() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -34,14 +38,13 @@ public class Addsteward extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		System.out.println("ëntered");
-		System.out.println("valid");
-		String var1=request.getParameter("ste_id");
-		String var2=request.getParameter("ste_name");
-		String var3=request.getParameter("ste_pwd");
-		String var4=request.getParameter("ste_addr");
-		String var5=request.getParameter("ste_email");
-		int var6=Integer.parseInt(request.getParameter("ste_contact"));
+		
+		String var1=request.getParameter("km_id");
+		String var2=request.getParameter("km_name");
+		String var3=request.getParameter("km_pwd");
+		String var4=request.getParameter("km_addr");
+		String var5=request.getParameter("km_email");
+		int var6=Integer.parseInt(request.getParameter("km_contact"));
 		PrintWriter out=response.getWriter();
 		
 		Connection con=null;
@@ -51,8 +54,8 @@ public class Addsteward extends HttpServlet {
 	    	
         	con=Dbconnection.DbConn();
         	st=con.createStatement();
-        	st.executeUpdate("insert into steward(st_id,st_name,st_pwd,st_address,st_email,st_contact) values('"+var1+"','"+var2+"','"+var3+"','"+var4+"','"+var5+"',"+var6+")");
-        	out.println("alert(success)");
+        	st.executeUpdate("insert into kitchen_manager(km_id,km_name,km_pwd,km_address,km_email,km_contact) values('"+var1+"','"+var2+"','"+var3+"','"+var4+"','"+var5+"',"+var6+")");
+        	out.println("success");
         }
         catch(Exception e)
         {
@@ -61,5 +64,9 @@ public class Addsteward extends HttpServlet {
         }
 		
 	}
+		
+		
+		
+	}
 
-}
+

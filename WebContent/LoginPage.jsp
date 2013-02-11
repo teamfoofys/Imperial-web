@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=windows-1256" pageEncoding="windows-1256" %>
+<!-- <%@ page language="java" contentType="text/html; charset=windows-1256" pageEncoding="windows-1256" %>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=windows-1256">
@@ -6,9 +6,20 @@
 <script  type="text/javascript" src="validate.js"></script>
 <title>Login Page</title> 
 
+</head> -->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Login  </title>
+<script type="text/javascript" src="js/zxml.js"></script>
+<script type="text/javascript" src="js/authenticate.js"></script>
 </head>
-<body>
-<form name="actionForm" action="LoginServlet" method ="GET" onsubmit="return fnLogin()">
+
+<body bgcolor="cyan">
+
+<!-- <form name="actionForm" action="LoginServlet" method ="GET" onsubmit="return fnLogin()">
 <img src="images/image1.jpg" alt="no image" width="300" height="300" align="left"/>
 
 <div align="center">
@@ -23,25 +34,19 @@
 <br>
 <br>
 
-<div align="right">
-<table>
-<tr>
-<td width="15">Username:</td>
-<td width="10"><input type="text" name="uname" maxlength="20" width="20"/></td>
-<td width="200"><div id="error1"></div></td>
-</tr>
+<div align="right">-->
 
-<tr>
-<td width="15">Password:</td>
-<td width="10"><input type="password" name="password" maxlength="10" width="20"/></td>
-<td width="200"><div id="error2"></div></td>
-</tr>
+<h1> WELCOME TO IMPERIAL INHOUSE</h1>
+USERNAME:
+<input type="text" id="uname"/>
+<br/>
+PASSWORD:
+<input type="text" id="pass"/>
+<br/>
+<input type="button" value="login" onclick="check_authen()"/>
+<br/>
 
-<tr>
-<td width="15"></td>
-<td width="10"><input type="submit" value="Login" > 
-
-<script>
+<!--<script>
 function formReset()
 {
 document.getElementById("frm1").reset();
@@ -50,7 +55,7 @@ document.getElementById("frm1").reset();
 
 
 
-<form name="frm1">
+ <form name="frm1">
 <input type="reset" onclick="formReset()" value="Reset form">
 </form>
 
@@ -60,7 +65,7 @@ document.getElementById("frm1").reset();
 </table>
 </div>
 
-</form>
+</form>-->
 
 
 </body>

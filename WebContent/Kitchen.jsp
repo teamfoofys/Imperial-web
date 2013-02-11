@@ -13,7 +13,7 @@
 
 <h3>Kitchen Center</h3><br><br></div>
 
-<FORM action="K1.jsp"><INPUT type=submit value="Main Kitchen"><a
+<FORM action="mainkitchen.jsp"><INPUT type=submit value="Main Kitchen"><a
 href="Kitchen1.jsp" ></a>
 </FORM>
 <br>

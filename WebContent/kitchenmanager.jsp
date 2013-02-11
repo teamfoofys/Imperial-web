@@ -3,27 +3,27 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>List of Steward  </title>
+<title>List of kitchen managers  </title>
 <script type="text/javascript" src="js/zxml.js"></script> 
-<script type="text/javascript" src="js/steward.js"></script>
+<script type="text/javascript" src="js/kitchenmanager.js"></script>
 </head>
 <body>
 <br><br><br>
 <body bgcolor="green">
 
 <div align ="Center">
-<h1> LIST OF STEWARDS </h1>
-<input type="button" value="view list" onclick="view_steward()"/>
+<h1> LIST OF KITCHEN MANAGERS </h1>
+<input type="button" value="view list" onclick="viewkm_manager()"/>
 
-<h3>Adding steward : Enter steward details</h3></div><br><br><br>
-<input type="text" id="ste_id"/>
-<input type="text" id="ste_name"/>
-<input type="text" id="ste_pwd"/>
-<input type="text" id="ste_addr"/>
-<input type="text" id="ste_email"/>
-<input type="text" id="ste_contact"/>
+<h3>Adding kitchen managers : Enter kitchen manager details</h3></div><br><br><br>
+<input type="text" id="km_id"/>
+<input type="text" id="km_name"/>
+<input type="text" id="km_pwd"/>
+<input type="text" id="km_addr"/>
+<input type="text" id="km_email"/>
+<input type="text" id="km_contact"/>
 
- <input type="button" value="Add" onclick="add_steward()" />
+ <input type="button" value="Add" onclick="addkm_manager()" />
  
  
 

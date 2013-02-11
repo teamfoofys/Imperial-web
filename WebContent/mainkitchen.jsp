@@ -21,7 +21,10 @@
 
 
 
-<FORM action="AddK11.jsp"><INPUT type=submit value="Add/Delete Item"><a
+<FORM action="Addkitchenitem.jsp"><INPUT type=submit value="Add Item"><a
+href="AddK11.jsp" ></a>
+
+<FORM action="deletekitchenitem.jsp"><INPUT type=submit value="delete Item"><a
 href="AddK11.jsp" ></a>
 </FORM>
 </body>

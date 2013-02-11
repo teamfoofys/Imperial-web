@@ -10,11 +10,11 @@
   String userID = request.getParameter("uname");
 %>
 
-<img src="images/image1.jpg" alt="no image"  align="justify width="300" height="130" >
-<body bgcolor="orange">
+<!-- <img src="/logo.jpg" alt="no image"  align="justify width="300" height="130" >-->
+<body background="C:\Users\Arun\Desktop\images1\imperial.png">
 
-<marquee behavior="slide" direction="left"><h3>Welcome, Login Successful
-</h3></marquee>
+<marquee behavior="slide" direction="left"><h3><font color="white">Welcome, Login Successful
+</h3></marquee></font>
 
 
 <br><br><br><br>
@@ -34,11 +34,11 @@ href="Menu.jsp" ></a>
 href="Kitchen.jsp" ></a>
 </FORM>
 
-<FORM action="Kitchen.jsp"><INPUT type=submit button style="width: 120px; height: 40px;" style="height:35px" value="Report"><a
+<FORM action="sales.jsp"><INPUT type=submit button style="width: 120px; height: 40px;" style="height:35px" value="Report"><a
 href="Kitchen.jsp" ></a>
 </FORM>
 
-<FORM action="Kitchen.jsp"><INPUT type=submit button style="width: 120px; height: 40px;" style="height:35px" value="Feedback"><a
+<FORM action="feedback.jsp"><INPUT type=submit button style="width: 120px; height: 40px;" style="height:35px" value="Feedback"><a
 href="Kitchen.jsp" ></a>
 </FORM></div>
 

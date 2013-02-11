@@ -6,18 +6,19 @@
 <title>Steward List</title>
 </head>
 <body>
-<body bgcolor="silver">
+<body background="C:\Users\Arun\Desktop\images1\imperial.png">
 
-<img src="images/image1.jpg" alt="no image"  align="justify width="300" height="130" >
+
+<!-- <img src="images/imperial.png" alt="no image"  >-->
 <br><br><br><br>
 <div align="center"><br><br>
-<FORM action="Steward.jsp"><INPUT type=submit  button style="width: 150px; height: 50px;"  value="View Stewards List"><a
+<FORM action="Steward.jsp"><INPUT type=submit  button style="width: 150px; height: 50px;"  value="Stewards Details"><a
 href="Steward.jsp" ></a>
 </FORM>
 
 <br><br>
-<FORM action="Steward.jsp"><INPUT type=submit  button style="width: 150px; height: 50px;" style="height:35px"  value="List of Kitchen Manager"><a
-href="Employee.jsp" ></a>
+<FORM action="kitchenmanager.jsp"><INPUT type=submit  button style="width: 150px; height: 50px;" style="height:35px"  value="Kitchen Manager details"><a
+href="Kitchen_manager.jsp" ></a>
 </FORM></div>
 <br><br>
 

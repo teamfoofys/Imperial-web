@@ -13,8 +13,8 @@
 
 <h2>____________________________________________________________________</h2>
 
-<FORM action="AllItem.jsp">
-<INPUT type=submit value="All"><a href="AddItem.jsp" ></a>
+<FORM action="allmenu.jsp">
+<INPUT type=submit value="All"><a href="allmenu.jsp" ></a>
 </FORM>
 <br>
 <br>
